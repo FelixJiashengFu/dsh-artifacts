@@ -1,0 +1,16 @@
+# dsh-artifacts bundle layer: one Host row. The browser half is discovered
+# from this package's `dsh.client` declaration once the row is enabled.
+#
+# Override any option from your profile's cordis.patch.yml by restating this
+# row with the same id (a patch replaces the whole `config`), e.g.:
+#
+#   - id: dsh-artifacts
+#     name: dsh-artifacts-felix
+#     config:
+#       cdn:
+#         npm: https://fastly.jsdelivr.net/npm
+#       ai:
+#         maxCallsPerMinute: 10
+- insert:
+    - id: dsh-artifacts
+      name: dsh-artifacts-felix
